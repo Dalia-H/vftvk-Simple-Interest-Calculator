@@ -9,11 +9,11 @@
         <div class = "maindiv" >                    
             <h1>Simple Interest Calcutator</h1>     <!--App name with a header 1 format-->
 
-            Amount <input type="number" id="principal"> <br/>                                      <!--Input for the Amount-->
+            Amount <input type="number" id="principal"> <br><br/>                                      <!--Input for the Amount-->
             Rate <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate()">          <!--Input for the Rate, when changed the updateRate() function is called-->
                 <span id="rate_val">
                 10.25 %
-                </span><br/>
+                </span> <br><br/>
             No. of Years                            <!--Input for No. of years with a dropdown menu and 10 option values--> 
             <select id="years">
                 <option value="1">1</option><option value="2">2</option>
@@ -21,11 +21,10 @@
                 <option value="5">5</option><option value="6">6</option>
                 <option value="7">7</option><option value="8">8</option>
                 <option value="9">9</option><option value="10">10</option>
-            </select><br/>
+            </select> <br><br/>
            
-            <button onclick= "compute()">Compute Interest</button> <br/>      <!--Button, when clicked calls validateNum() and compute() functions--> 
-            Interest : <span id="result"></span> <br>       <!--Interest label that will show the "result" once is calculated-->
-            <p class = "result" id="result"></p>
+            <button onclick= "compute()">Compute Interest</button> <br><br/>      <!--Button, when clicked calls validateNum() and compute() functions--> 
+            <p class = "result" id="result"></p>        <!-- show the "result" once is calculated-->
             
             <footer>
             &#169; This Calculator belongs to Dalia H       <!--Footer of the page with the developers name-->
