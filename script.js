@@ -12,6 +12,11 @@ function compute()
         alert("Enter a positive number");
         document.getElementById("principal").focus();
     }
+    if(principal.isEmpty()){
+        alert("Enter a positive number");
+        document.getElementById("principal").focus();
+    }
+    
     var rate = parseFloat(document.getElementById("rate").value);
     var years = parseInt(document.getElementById("years").value);
     var interest = principal * years * rate / 100;
