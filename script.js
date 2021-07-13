@@ -5,7 +5,12 @@ function validateNum()      //function to make sure the number is valid
     if(!moreThanZero){                                      
         alert("Enter a positive number");
         document.getElementById("principal").focus();
-    } 
+        return false;
+    }
+    else
+    {
+        compute();
+    }
 }
 
 function updateRate()       //function to update the rate value
