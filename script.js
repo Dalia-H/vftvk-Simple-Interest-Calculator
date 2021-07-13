@@ -1,13 +1,3 @@
-function validateNum()      //function to make sure the number is valid
-{
-    var principal = document.getElementById("principal").value;         
-    var moreThanZero = parseInt(principal) > 0;     
-    if(!moreThanZero){                                      
-        alert("Enter a positive number");
-        document.getElementById("principal").focus();
-    }
-}
-
 function updateRate()       //function to update the rate value
 {
     var rateval = document.getElementById("rate").value;
@@ -16,7 +6,12 @@ function updateRate()       //function to update the rate value
 
 function compute()          
 {
-    var principal = parseFloat(document.getElementById("principal").value);     
+    var principal = parseFloat(document.getElementById("principal").value);   
+    var moreThanZero = parseInt(principal) > 0;     
+    if(!moreThanZero){                                      
+        alert("Enter a positive number");
+        document.getElementById("principal").focus();
+    }
     var rate = parseFloat(document.getElementById("rate").value);
     var years = parseInt(document.getElementById("years").value);
     var interest = principal * years * rate / 100;
